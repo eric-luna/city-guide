@@ -33,8 +33,8 @@ html,body{
 
 /************ Header Section ***************/
 .page-top{
-	background: /*linear-gradient(#e6e6e6, transparent 40%),
-	            linear-gradient(0deg, #fff, transparent),*/
+	background: linear-gradient(#4d4d4d, transparent 50%),
+	            linear-gradient(0deg, #4d4d4d, transparent 50%),
 	            url("../img/city.jpeg") center;
 	text-align: center;
 	height: 100%;
@@ -45,6 +45,7 @@ html,body{
 	text-align: center;
 	margin: auto;
 	padding-top: 40%;
+	vertical-align: middle;
 	color: white;
 }
 .banner h1{
@@ -54,6 +55,7 @@ html,body{
 .introduction{
 	text-align: center;
 	margin: auto;
+	margin-top: 12%;
 }
 .about{
 	width: 80%;
@@ -76,16 +78,17 @@ html,body{
 .attractions{
 	margin: auto;
 	text-align: center;
-	/*height: 100%;*/
 	clear: both;
+}
+.attraction-heading{
+	text-decoration: underline;
+	font-size: 1.5em;
 }
 .description{
 	margin: auto;
 	text-align: justify;
 	width: 85%;
 	padding-top: 4%;
-}
-.entertainment, .dining{
 }
 .pic{
 	width: 85%;
@@ -149,29 +152,42 @@ html,body{
   color: white;
 }
 /************* Footer Section *******************/
-footer{
-	text-align: center;
+footer {
+	clear: both;
 	margin: auto;
+	margin-top: 5%;
+	text-align: center;
 }
-footer a {
-	color: #595959;
+footer p a:link{
 	text-decoration: none;
+	color: blue;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+footer p a:visited{
+	color: blue;
+	text-decoration: none;
+	font-weight: bolder;
 }
 
 
 /********************** Responsive Design ***************************/
 @media only screen and (min-width: 800px) {
+	.introduction{
+		margin-top: 5%;
+	}
 	.border {
 		border-top: 2px solid black;
 	}
 	.banner{
+		font: 800 2.5em/1.0 'Work Sans', Optima;
 		padding-top: 16%;
 	}
-	.entertainment{
+	.attraction-left{
 		float: left;
 		width: 50%;
 	} 
-	.dining {
+	.attraction-right {
 		float: right;
 		width: 50%;
 	}
