@@ -79,6 +79,9 @@ html,body{
 	margin: auto;
 	margin-top: 5%;
 }
+.introduction h1 {
+	font-size: 3.5em;
+}
 .about{
 	width: 80%;
 	margin: 50px auto;
